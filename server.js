@@ -23,7 +23,7 @@ app.use("/api/auth", authRoutes);
 
 
 app.get("/", (req, res) => {
-  res.json({ message: "Backend is working fine!" });
+  res.send({ message: "Backend is working fine!" });
 });
 
 app.listen(process.env.PORT, () => {
