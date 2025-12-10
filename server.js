@@ -22,7 +22,7 @@ connectDB();
 app.use("/api/auth", authRoutes);
 
 
-app.get("/test", (req, res) => {
+app.get("/", (req, res) => {
   res.json({ message: "Backend is working fine!" });
 });
 
